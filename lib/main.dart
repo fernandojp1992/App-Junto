@@ -460,7 +460,7 @@ class _PagarState extends State<Pagar> {
       var dateDifference = DateTime.now().difference(
           dateTimes[i]);
       if(dateDifference.inDays > 0){
-        if(dateDifference.inDays < 15){
+        if(dateDifference.inDays < 7){
           return dateTimes;
 
         }
@@ -470,13 +470,18 @@ class _PagarState extends State<Pagar> {
 
   @override
 
-  void filterListDateDays (){
+  List filterListDateDays (){
 
-    if (isDesc)
-      dateTimes.sort((a, b) => a.compareTo(b));
-    else
-      dateTimes.sort((a, b) => b.compareTo(a));
-    isDesc = !isDesc;
+    for(var i = 0; i < dateTimes.length; i++){
+      var dateDifference = DateTime.now().difference(
+          dateTimes[i]);
+      if(dateDifference.inDays > 0){
+        if(dateDifference.inDays < 15){
+          return dateTimes;
+
+        }
+      }
+    }
   }
 
 
