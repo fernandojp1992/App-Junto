@@ -6,13 +6,9 @@ class LoginPage extends StatelessWidget {
 
 
   Widget build(BuildContext context) {
-
     return Scaffold(
       resizeToAvoidBottomPadding: false,
-
-
       body: Container(
-
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/images/loginBack.png'),
@@ -20,12 +16,8 @@ class LoginPage extends StatelessWidget {
               alignment: Alignment.center,
             ),
           ),
-
         child: Column(
           children: <Widget>[
-
-
-
             Align(
         alignment: Alignment.centerLeft,
           child: Container(
@@ -52,10 +44,8 @@ class LoginPage extends StatelessWidget {
                       fontSize: 60.0,
                     ),
                   ),
-
               ),
             ),
-
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
@@ -90,7 +80,6 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 40),
-
                     Container(
                       height: 40,
                       child: Material(
@@ -116,10 +105,7 @@ class LoginPage extends StatelessWidget {
                       )
                     )
                   ],
-
-
                 ),
-
               ),
             ),
           ],

@@ -1,4 +1,4 @@
-import 'package:appjunto/home.dart';
+
 import 'package:appjunto/main.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -32,7 +32,7 @@ class _SplashscreenState extends State<Splashscreen> {
   void _navigateToHome(){
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (BuildContext context) => Home()
+        builder: (BuildContext context) => HomeScreen()
       )
     );
   }

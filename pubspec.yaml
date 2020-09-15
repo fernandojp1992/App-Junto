@@ -30,6 +30,9 @@ dependencies:
   intl: ^0.16.1
   flutter_sparkline: ^0.1.0
   cloud_firestore: ^0.14.0+2
+  flutter_snake_navigationbar: ^0.4.0+1
+  hexcolor: ^1.0.4
+  
 
 
 
@@ -70,6 +73,7 @@ flutter:
     - assets/images/back.jpeg
     - assets/world.mp4
     - assets/images/loginBack.png
+    - assets/back-2.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
